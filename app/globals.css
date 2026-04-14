@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0f1a2b;
+  --primary-foreground: #fafafa;
+
+  --secondary: #e9c349;
+  --secondary-foreground: #081424;
+
+  --accent: #af8d11;
+  --accent-foreground: #081424;
+
+  --background: #081424;
+  --foreground: #fafafa;
+
+  --muted: #0f1a2b;
+  --muted-foreground: #c9d2e3;
+
+  --border: #0f1a2b;
+  --ring: #e9c349;
+
+  --destructive: #ef4444;
+
+  --card: #0f1a2b;
+  --card-foreground: #fafafa;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+::selection {
+  background: rgba(233, 195, 73, 0.25);
+}
+
+/* Utility: luxury gradient overlay for image heroes */
+.hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 20, 36, 0.92) 0%,
+    rgba(8, 20, 36, 0.72) 45%,
+    rgba(8, 20, 36, 0.35) 100%
+  );
+}
